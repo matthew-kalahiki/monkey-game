@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.model.GameController">
+   <center>
+      <Pane fx:id="pane" maxHeight="358.4" maxWidth="600.0" minHeight="358.4" minWidth="600.0" prefHeight="358.4" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="p2Name" layoutX="339.0" layoutY="25.0" onMouseEntered="#ShowP2Status" onMouseExited="#HideP2Status" text="P2 Name" />
+            <TextField fx:id="p2HP" layoutX="339.0" layoutY="50.0" text="HP" />
+            <Rectangle fx:id="p1R" arcHeight="5.0" arcWidth="5.0" fill="#bf9347" height="250.0" layoutX="95.0" layoutY="108.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="10.0" />
+            <Button fx:id="begin" layoutX="271.0" layoutY="38.0" mnemonicParsing="false" onAction="#Begin" text="Start" />
+            <TextField fx:id="power" layoutX="218.0" layoutY="252.0" text="5" />
+            <Button fx:id="fire" layoutX="272.0" layoutY="227.0" mnemonicParsing="false" onAction="#Fire" text="Fire!" />
+            <Rectangle fx:id="p2R" arcHeight="5.0" arcWidth="5.0" fill="#bf9347" height="250.0" layoutX="478.0" layoutY="108.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="10.0" />
+            <TextField fx:id="p1Name" layoutX="95.0" layoutY="25.0" onMouseEntered="#ShowP1Status" onMouseExited="#HideP1Status" text="P1 Name" />
+            <Button fx:id="up" layoutX="276.0" layoutY="300.0" mnemonicParsing="false" onMousePressed="#UpA" onMouseReleased="#UpB" text="Up" />
+            <Button fx:id="down" layoutX="269.0" layoutY="325.0" mnemonicParsing="false" onMousePressed="#DownA" onMouseReleased="#DownB" text="Down" />
+            <TextField fx:id="p1HP" layoutX="95.0" layoutY="50.0" text="HP" />
+            <Label fx:id="pow" layoutX="161.0" layoutY="253.0" text="Power:" underline="true">
+               <font>
+                  <Font name="Palatino Linotype Bold" size="18.0" />
+               </font></Label>
+            <Label fx:id="ang" layoutX="162.0" layoutY="278.0" text="Angle:" underline="true">
+               <font>
+                  <Font name="Palatino Linotype Bold" size="18.0" />
+               </font></Label>
+            <TextField fx:id="angle" layoutX="218.0" layoutY="277.0" text="45" />
+            <Button fx:id="items" layoutX="14.0" layoutY="51.0" mnemonicParsing="false" onMousePressed="#ShowItems" text="Items" />
+            <Button fx:id="b1" layoutX="11.0" layoutY="96.0" mnemonicParsing="false" visible="false" />
+            <Button fx:id="b2" layoutX="11.0" layoutY="121.0" mnemonicParsing="false" visible="false" />
+            <Button fx:id="b3" layoutX="11.0" layoutY="146.0" mnemonicParsing="false" visible="false" />
+            <Button fx:id="b4" layoutX="11.0" layoutY="171.0" mnemonicParsing="false" visible="false" />
+            <Button fx:id="b5" layoutX="10.0" layoutY="196.0" mnemonicParsing="false" visible="false" />
+            <Button fx:id="b6" layoutX="10.0" layoutY="221.0" mnemonicParsing="false" visible="false" />
+            <Button fx:id="b7" layoutX="10.0" layoutY="246.0" mnemonicParsing="false" visible="false" />
+            <Button fx:id="b8" layoutX="10.0" layoutY="271.0" mnemonicParsing="false" visible="false" />
+            <TextField fx:id="desc" editable="false" layoutY="332.0" visible="false" />
+            <ImageView fx:id="title" fitHeight="90.0" fitWidth="200.0" layoutX="191.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="cheat" layoutX="534.0" layoutY="325.0" mnemonicParsing="false" onAction="#Cheat" text="cheat" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
